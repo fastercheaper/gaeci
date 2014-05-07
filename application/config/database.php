@@ -45,13 +45,13 @@
 | the active record class
 */
 
-$active_group = 'default';
+$active_group = 'dev';
 $active_record = TRUE;
 
 $db['default']['hostname'] = 'localhost';
-$db['default']['username'] = '';
-$db['default']['password'] = '';
-$db['default']['database'] = '';
+$db['default']['username'] = 'root';
+$db['default']['password'] = ''; // no password for Cloud SQL. app has external permissions 
+$db['default']['database'] = 'tracking';
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';
 $db['default']['pconnect'] = TRUE;
@@ -64,6 +64,21 @@ $db['default']['swap_pre'] = '';
 $db['default']['autoinit'] = TRUE;
 $db['default']['stricton'] = FALSE;
 
+$db['dev']['hostname'] = '127.0.0.1';
+$db['dev']['username'] = 'root';
+$db['dev']['password'] = 'rk';
+$db['dev']['database'] = 'tracking';
+$db['dev']['dbdriver'] = 'mysql';
+$db['dev']['dbprefix'] = '';
+$db['dev']['pconnect'] = TRUE;
+$db['dev']['db_debug'] = TRUE;
+$db['dev']['cache_on'] = FALSE;
+$db['dev']['cachedir'] = '';
+$db['dev']['char_set'] = 'utf8';
+$db['dev']['dbcollat'] = 'utf8_general_ci';
+$db['dev']['swap_pre'] = '';
+$db['dev']['autoinit'] = TRUE;
+$db['dev']['stricton'] = FALSE;
 
 /* End of file database.php */
 /* Location: ./application/config/database.php */
