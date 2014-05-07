@@ -84,6 +84,8 @@
 	</div>
 
 	<p class="footer">Page rendered in <strong>{elapsed_time}</strong> seconds</p>
+	
+	<a href="/ignite">Add Record</a>
 </div>
 
 </body>
